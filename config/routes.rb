@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'catch_all/index'
+  	root to: 'pages#main"
+	
+	get 'catch_all/index'
 
-  get '*path', to: 'shared#404'
+  	get '*path', to: 'shared#404'
 end
